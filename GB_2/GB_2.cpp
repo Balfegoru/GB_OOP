@@ -18,8 +18,8 @@ public:
    RGBA(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)
       : m_red(red), m_green(green), m_blue(blue), m_alpha(alpha) {}
 
-   void Print() {
-      std::cout << "m_red: " << m_red << "\nm_green: " << m_green << "\nm_blue: " << m_blue << "\nm_alpha: " << m_alpha << std::endl;
+   void Print() { 
+      std::cout << "m_red: " << static_cast<int>(m_red) << "\nm_green: " << static_cast<int>(m_green) << "\nm_blue: " << static_cast<int>(m_blue) << "\nm_alpha: " << static_cast<int>(m_alpha) << std::endl;
    }
 };
 
