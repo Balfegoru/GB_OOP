@@ -29,9 +29,9 @@ public:
    }
 
    bool push(int number) {
-      if (size <= 10) {
-         mass[size] = number;
+      if (size < 10) {
          size++;
+         mass[size - 1] = number;     
          return true;
       }
       else {
